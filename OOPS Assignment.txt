@@ -1,0 +1,67 @@
+Q1 - How to Create an Object in Java ?
+
+ANS -  * Define a Class: First, you need to define a class. A class is a blueprint for creating objects. It defines the properties (fields) and behaviors (methods) that objects of that type will have.
+       * Instantiate an Object: To create an object of the class, you use the new keyword followed by a call to a constructor. The constructor initializes the object.
+       * Access Object Members: Once you have created an object, you can access its fields and methods using the dot (.) operator.
+
+
+Q2 - What is the use of a new keyword in Java ?
+
+ANS - The "new" keyword in Java is used to dynamically allocate memory for an object at runtime and create an instance of a class. When you use "new" followed by a constructor, it initializes the object and returns a reference to it.
+EG - 
+ClassName objectName = new ClassName();
+
+
+Q3 - Whatare the different types of variables in Java ?
+
+
+ANS - Primitive Variables: Primitive variables store simple values of built-in data types. There are eight primitive data types in Java:
+
+ * byte: 8-bit signed integer
+ * short: 16-bit signed integer
+ *  int: 32-bit signed integer
+ *  long: 64-bit signed integer
+ * float: 32-bit floating-point number
+ *  double: 64-bit floating-point number
+ *  char: 16-bit Unicode character
+ *  boolean: true or false
+
+
+Reference Variables: Reference variables store references (memory addresses) to objects. They do not directly contain the object's data but instead point to where the object is stored in memory.
+
+Local Variables: Local variables are declared inside a method, constructor, or block and are accessible only within that scope.
+
+Instance Variables (Non-Static Variables): Instance variables are declared within a class but outside of any method, constructor, or block. They are created when an object is instantiated and exist as long as the object exists.
+
+Static Variables (Class Variables): Static variables are declared with the static keyword and belong to the class rather than any specific instance. They are initialized only once at the start of the program and shared among all instances of the class.
+
+
+Q4 - What is the difference between instanc and local variables ?
+
+ANS - Instance Variables:
+
+Scope: Instance variables are declared within a class but outside of any method, constructor, or block. They are accessible to all methods, constructors, and blocks of the class.
+Lifetime: Instance variables are created when an object of the class is instantiated and exist as long as the object exists. Each instance of the class has its own copy of instance variables.
+Declaration: Instance variables are declared at the class level but outside of any method, constructor, or block.
+Usage: Instance variables hold data that is unique to each object instance of a class. They define the state of an object and are accessed using object references
+
+
+Local Variables:
+
+Scope: Local variables are declared within a method, constructor, or block. They are accessible only within the scope in which they are declared.
+Lifetime: Local variables are created when the method, constructor, or block is entered and destroyed when it exits. They do not persist beyond the execution of the method, constructor, or block.
+Declaration: Local variables are declared within a method, constructor, or block.
+Usage: Local variables are used to store temporary data that is needed only within the scope of a method, constructor, or block.
+
+
+Q5 - In which area memory is allocated for instance and local variable ?
+
+ANS - * Instance Variables: Memory for instance variables is allocated on the heap when an object is created.
+
+      * Local Variables: Memory for local variables is allocated on the stack when the method, constructor, or block is invoked.
+
+
+Q6 - What is method overloading ?
+
+ANS - 
+Method overloading in Java refers to the ability to define multiple methods in the same class with the same name but with different parameter lists. This allows you to provide multiple implementations of a method, each tailored to accept different types or numbers of parameters.
